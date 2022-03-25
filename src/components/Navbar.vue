@@ -1,7 +1,9 @@
 <template>
 	<div class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
-			<a href="#" class="navbar-brand">CHUA</a>
+			<a href="#" class="navbar-brand">CHUA
+				<span class="brand-tooltip">CHUA</span>
+			</a>
 			<button class="navbar-toggler" 
 				data-bs-toggle="collapse" 
 				data-bs-target="#navCollapsableItems"
@@ -15,6 +17,21 @@
 						<span class="nav-item-tooltip">ABOUT</span>
 						</a>
 					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">LEARNING
+						<span class="nav-item-tooltip">LEARNING</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">LEARNING
+						<span class="nav-item-tooltip">LEARNING</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">CONTACT
+						<span class="nav-item-tooltip">CONTACT</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -24,6 +41,24 @@
 	
 </template>
 <style scoped>
+.navbar-brand{
+	position: relative;
+	padding: 0.5rem;
+	overflow: hidden;
+}
+.brand-tooltip{
+	position: absolute;
+	top: -120%;
+	left: -20%;
+	background-color: grey;
+	padding: 0.5rem;
+	transition: ease-in 0.2s;
+}
+.navbar-brand:hover .brand-tooltip {
+	top: 0%;
+	left: 0%;
+	color: white;
+}
 .navbar-container {
 	justify-content: end;	
 }
