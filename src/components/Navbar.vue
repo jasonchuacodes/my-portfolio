@@ -11,20 +11,9 @@
 			<div class="navbar-container collapse navbar-collapse" id="navCollapsableItems">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a href="#" class="nav-link">ABOUT</a>
+						<a href="#" class="nav-link">ABOUT
 						<span class="nav-item-tooltip">ABOUT</span>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">SKILLS</a>
-						<span class="nav-item-tooltip">SKILLS</span>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">LEARNING</a>
-						<span class="nav-item-tooltip">LEARNING</span>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">CONTACT</a>
-						<span class="nav-item-tooltip">CONTACT</span>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -37,27 +26,35 @@
 <style scoped>
 .navbar-container {
 	justify-content: end;	
-}
-
-
-.navbar-nav .nav-item{
-	position: relative;
 	/* overflow: hidden; */
 }
-.nav-item:hover .nav-item-tooltip {
-	top: -50%;
-	transform: translate(0%, 50%);
-  padding: 0.5rem;
-  text-decoration: none;
-	transition: ease-in 0.2s;
+/* .nav-item a{
+	position: relative;
+	padding: 1rem 0.5rem;
+	background-color: red;
 }
 .nav-item-tooltip {
-	background-color: #ddd;
-	color: black;
 	position: absolute;
-  padding: 0.5rem;
-	top: -200%;
-	transform: translate(0%, 50%);
+	background-color: grey;
+	top: -100%;
+	transition: ease-in 0.2s;
 }
-
+*/
+.nav-item a{ 
+	position: relative;
+	overflow: hidden;
+}
+.nav-item-tooltip {
+	position: absolute; 
+	background-color: grey;
+	top: -150%;
+	left: -20%;
+	padding: 0.5rem;
+	transition: ease-in 0.2s;
+}
+.nav-item a:hover .nav-item-tooltip {
+	top: 0%;
+	left: 0%;
+	color: white;
+} 
 </style>
