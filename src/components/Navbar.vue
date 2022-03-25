@@ -26,20 +26,7 @@
 <style scoped>
 .navbar-container {
 	justify-content: end;	
-	/* overflow: hidden; */
 }
-/* .nav-item a{
-	position: relative;
-	padding: 1rem 0.5rem;
-	background-color: red;
-}
-.nav-item-tooltip {
-	position: absolute;
-	background-color: grey;
-	top: -100%;
-	transition: ease-in 0.2s;
-}
-*/
 .nav-item a{ 
 	position: relative;
 	overflow: hidden;
