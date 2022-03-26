@@ -1,7 +1,9 @@
 <template>
 <div class="container mt-5">
   <Navbar />
-  <p>Ahoy there mates!</p>
+  <p>Ahoy there mates!
+    This will fail
+  </p>
 </div>
 </template>
 
