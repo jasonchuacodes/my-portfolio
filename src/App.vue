@@ -1,19 +1,20 @@
 <template>
-<div class="container mt-5">
+<div class="container m-5">
   <Navbar />
-  <p>Ahoy there mates!
-    This will fail
-  </p>
+</div>
+<div class="container">
+  <Navbar2 />
 </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-
+import Navbar2 from './components/Navbar2.vue'
 export default {
   name: 'App',
   components: {
-		Navbar
+		Navbar,
+    Navbar2
   }
 }
 </script>

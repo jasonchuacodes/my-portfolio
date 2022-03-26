@@ -44,15 +44,16 @@
 .navbar-brand{
 	position: relative;
 	padding: 0.5rem;
-	overflow: hidden;
+	/* overflow: hidden; */
+	border-radius: 0.3rem;
 }
 .brand-tooltip{
 	position: absolute;
 	top: -120%;
-	left: -20%;
+	left: 0%;
 	background-color: grey;
 	padding: 0.5rem;
-	transition: ease-in 0.2s;
+	transition: ease-in 0.15s;
 }
 .navbar-brand:hover .brand-tooltip {
 	top: 0%;
@@ -64,15 +65,16 @@
 }
 .nav-item a{ 
 	position: relative;
-	overflow: hidden;
+	/* overflow: hidden; */
+	border-radius: 0.3rem;
 }
 .nav-item-tooltip {
 	position: absolute; 
 	background-color: grey;
 	top: -150%;
-	left: -20%;
+	left: 0%;
 	padding: 0.5rem;
-	transition: ease-in 0.2s;
+	transition: ease-in 0.15s;
 }
 .nav-item a:hover .nav-item-tooltip {
 	top: 0%;
