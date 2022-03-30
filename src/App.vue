@@ -1,20 +1,38 @@
 <template>
-<div class="container m-5">
+<div class="container mt-5">
   <Navbar />
-</div>
-<div class="container">
-  <Navbar2 />
+  <CustomInput 
+    :name="firstNameLabel" 
+    v-model="fname" 
+  />
+  <br>
+  <CustomInput 
+    :name="lastNameLabel" 
+    v-model="lname" 
+  />
+
+  <div>First Name: {{fname}}</div>
+  <div>Last Name: {{lname}}</div>
 </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-import Navbar2 from './components/Navbar2.vue'
+import CustomInput from './components/CustomInput.vue'
+
+
 export default {
   name: 'App',
+  props: ['fname', 'lname'],
   components: {
-		Navbar,
-    Navbar2
+    Navbar,
+    CustomInput
+  },
+  data() {
+    return{
+      firstNameLabel: 'First Name',
+      lastNameLabel: 'Last Name',
+    }
   }
 }
 </script>
