@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="navbar navbar-expand-md navbar-light bg-light p-2">
     <div class="brand">
       <a href="#">CHUWIE</a>
     </div>
@@ -42,8 +42,6 @@
 .brand {
   display: flex;
   justify-content: center;
-  margin: 0 1rem;
-  padding: 0 0.8rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
@@ -93,25 +91,46 @@
 	justify-content: end;	
 }
 
+.navbar-nav{
+  margin-top: 1.5rem;
+}
 /* Nav-item */
 .nav-item {
   overflow: hidden;
-  margin: 0 0.5rem;
+  position: relative;
+  margin: 0.5rem;
 }
 .nav-link {
   position: relative;
   transition: ease-in 0.2s;
   top: 0%;
+  padding: 0 0.2rem;
 }
 .nav-link-tooltip {
   position: absolute;
-  top: 120%;
+  top: 150%;
   left: 0%;
-  padding: 0.5rem; 
   transition: ease-in 0.2s;
   font-weight: bold;
+  padding: 0;
 }
 .nav-item:hover .nav-link {
-  top: -120%;
+  transform: translateY(-150%);
 }
+/* responsive expand-md */
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    margin: 0rem;
+  }
+  .nav-item{
+    margin: 0 0.2rem;
+  }
+  .navbar-nav{
+    margin: 0;
+  }
+  .nav-link-tooltip {
+  padding: 0 0.5rem;
+}
+}
+
 </style>
