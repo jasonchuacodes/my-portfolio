@@ -1,6 +1,6 @@
 <template>
   <div class="navbar navbar-expand-md navbar-light bg-light p-2">
-    <div class="brand">
+    <div class="brand ms-2">
       <a href="#">CHUWIE</a>
     </div>
     <button class="navbar-toggler" 
@@ -46,6 +46,7 @@
   text-decoration: none;
   white-space: nowrap;
   position: relative;
+  /* margin-left: 0.5rem; */
 }
 .brand::before {
   color: #6c757d;
